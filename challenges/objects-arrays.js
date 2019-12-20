@@ -99,8 +99,10 @@ const unisWithUni = [];
 let myRegex = /Uni/;
 
 for(let i = 0; i < graduates.length; i++){
+  let mappedObj = {};
+  mappedObj.university = graduates[i].university;
   if (graduates[i].university.match(myRegex)){
-       unisWithUni.push(graduates[i].university)
+       unisWithUni.push(mappedObj);
   }
  }
 
